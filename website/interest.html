@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #d4e7f7, #ffffff);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nav-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: blue;
+            margin: 0 10px;
+            transition: color 0.3s;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover {
+            color: darkred;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .logo img {
+            width: 130px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .interest-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .interest-card img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .interest-card h2 {
+            margin: 15px 0;
+            font-size: 1.6em;
+            color: #ff5f5f;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .interest-card p {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #111111;
+            color: white;
+            border-top: 3px solid #ff5f5f;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            color: white;
+            padding: 8px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        
+        .wishlist-item {
+            margin: 20px 0;
+        }
+
+        .wishlist-item img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+            width: 200px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .wishlist-item h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .wishlist-item p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="logo2.png" alt="Logo">
+    </div>
+
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="experience.html">EXPERIENCE</a>
+            <a href="interest.html">INTEREST</a>
+             <a href="e-resume.html">E-RESUME</a>
+            <a href="contact.html">CONTACT</a>
+          
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="interest-card">
+            <h2 class="section-title">Movie/series</h2>
+         <div class="gallery">
+                <img src="blackclover.jpg" alt="movie">
+                <img src="youngsheldon.jpg" alt="movie">    
+                 <img src="disney.jpg" alt="movie">
+            </div>
+        </div>  
+        <div class="interest-card">
+            <h2 class="section-title">Conan Gray</h2>
+            <p>I love Conan Gray's music. His lyrics are meaningful, and his songs always hit me right in the feels.</p>
+            <audio controls>
+                <source src="familyline.mp3" type="audio/mp3">
+            </audio>
+            <div class="gallery">
+                <img src="conan2.jpg" alt="Conan Gray Image 1">
+                <img src="my%20boy%20home!!!.png" alt="Conan Gray Image 2">
+                <img src="conangray.jpg" alt="Conan Gray Image 2">
+            </div>
+        </div>
+        <div class="interest-card">
+            <h2 class="section-title">Photography</h2>
+            <p>Photography is my way of capturing the beauty of the world. I enjoy exploring new places with my camera.</p>
+            <div class="gallery">
+                <img src="bunga.jpeg" alt="Photography Image 1">
+                <img src="tiang.jpeg" alt="Photography Image 2">
+                 <img src="sunset1.jpg" alt="Photography Image 2">
+                 <img src="sunset2.jpg" alt="Photography Image 2">
+                 <img src="sunset3.jpg" alt="Photography Image 2">
+                 <img src="rayyan.jpg" alt="Photography Image 2">
+                <img src="daisy.jpeg" alt="Photography Image 2">
+            </div>
+        </div>
+        
+        <div class="interest-card">
+            <h2 class="section-title">Game</h2>
+            <p>I enjoy playing the game. It's a great way to connect with friends and explore new activities.</p>
+            <div class="gallery">
+                <img src="playtogether.jpg" alt="Photography Image 1">
+                <img src="roblox.jpg" alt="Photography Image 2">
+            </div>
+        </div>
+    </div>
+  <div class="container">
+        <div class="interest-card">
+            <h2>Wishlist</h2>
+            <div class="wishlist-item">
+                <img src="mekkah.jpg" alt="Visit Makkah">
+                <h3>Visit Makkah with My Mom and Sister</h3>
+                <p>It is my dream to perform Umrah with my mom and sister, creating unforgettable memories together.</p>
+            </div>
+            <div class="wishlist-item">
+                <img src="singing.jpg" alt="Conan Gray Concert">
+                <h3>Attend a Conan Gray Concert</h3>
+                <p>At least once in my life, I want to experience the magic of Conan Gray's music live in concert.</p>
+            </div>
+            <div class="wishlist-item">
+                <img src="travel.jpg" alt="Travel Around the World">
+                <h3>Travel Around the World</h3>
+                <p>I want to explore new cultures, try different cuisines, and visit iconic landmarks worldwide.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

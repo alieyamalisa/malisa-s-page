@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .wishlist {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .wishlist-item {
+            display: flex;
+            align-items: center;
+            background-color: #fafafa;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .wishlist-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .wishlist-item h3 {
+            font-size: 1.2em;
+            color: #555;
+            margin: 0;
+        }
+
+        .wishlist-item p {
+            font-size: 1em;
+            color: #888;
+            margin: 5px 0;
+        }
+
+        .wishlist-item .remove-btn {
+            margin-left: auto;
+            background-color: #ff5252;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .wishlist-item .remove-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Wishlist</h1>
+
+        <ul class="wishlist">
+            <li class="wishlist-item">
+                <img src="https://via.placeholder.com/100" alt="Item 1">
+                <div>
+                    <h3>Item 1</h3>
+                    <p>Description of Item 1</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </li>
+            <li class="wishlist-item">
+                <img src="https://via.placeholder.com/100" alt="Item 2">
+                <div>
+                    <h3>Item 2</h3>
+                    <p>Description of Item 2</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </li>
+            <li class="wishlist-item">
+                <img src="https://via.placeholder.com/100" alt="Item 3">
+                <div>
+                    <h3>Item 3</h3>
+                    <p>Description of Item 3</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

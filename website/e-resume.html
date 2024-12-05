@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My HTML Website</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #d4e7f7, #ffffff);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px; 
+        }
+
+        .logo img {
+            width: 100px; 
+            height: auto; 
+            border-radius: 50%; 
+            animation: rotateLogo 4s linear infinite;
+        }
+
+        @keyframes rotateLogo {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .nav-container {
+            position: fixed; 
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: blue;
+            margin: 0 10px;
+            transition: color 0.3s;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover {
+            color: darkred;
+            transform: scale(1.1);
+        }
+
+        .image-container {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            height: auto; 
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo2.png" alt="Logo"> 
+    </div>
+
+    <div class="nav-container">
+        <div class="nav-links">
+          <a href="home.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+             <a href="education.html">EDUCATION</a>
+            <a href="experience.html">EXPERIENCE</a>
+            <a href="interest.html">INTEREST</a>
+             <a href="e-resume.html">E-RESUME</a>
+            <a href="contact.html">CONTACT</a>
+          
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="alieyamalisacv.jpg" alt="CV Image">
+    </div>
+</body>
+</html>

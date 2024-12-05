@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My HTML Website</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee, #fad0c4, #ff9a9e, #fad0c4, #fbc2eb);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em;
+            margin: 20px 0;
+            color: black;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: dimgrey;
+        }
+        .nav-container {
+            position: absolute; 
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: blue;
+            margin: 0 10px;
+            transition: color 0.3s;
+            font-weight: 700;
+        }
+        .nav-links a:hover {
+            color: darkred;
+        }
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0; 
+        }
+        .logo img {
+            width: 130px; 
+            height: auto; 
+            border-radius: 50%; 
+        }
+        .profile-pic {
+            border-radius: 50%; 
+            width: 300px;
+            height: 300px;
+            object-fit: cover; 
+            margin: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo2.png" alt="Logo"> 
+    </div>
+    <img src="khun.jpg" class="profile-pic" alt="Profile Picture">
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="achievement.html">ACHIEVEMENT</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="goal.html">GOAL</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="e-resume.html">E-RESUME</a> 
+        </div>
+    </div>
+    <h1>Welcome to  Malisa's Page</h1>
+</body>
+</html>

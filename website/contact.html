@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My HTML Website</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #d4e7f7, #ffffff);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Fade in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em;
+            margin: 20px 0;
+            color: black;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-out;
+        }
+
+        /* Slide up animation for title */
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: dimgrey;
+        }
+
+        .nav-container {
+            position: absolute; 
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: blue;
+            margin: 0 10px;
+            transition: color 0.3s;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover {
+            color: darkred;
+            transform: scale(1.1);
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0; 
+        }
+
+        .logo img {
+            width: 130px; 
+            height: auto; 
+            border-radius: 50%; 
+            animation: rotateLogo 4s linear infinite;
+        }
+
+        /* Logo animation */
+        @keyframes rotateLogo {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .contact-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 40px 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            transform: scale(0.95);
+            animation: zoomIn 1s ease-out forwards;
+        }
+
+        /* Zoom in animation for contact container */
+        @keyframes zoomIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .contact-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: white;
+            font-size: 1.5em;
+            line-height: 60px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-icons a.instagram {
+            background: radial-gradient(circle, #fbc2eb, #a18cd1);
+        }
+
+        .social-icons a.whatsapp {
+            background: radial-gradient(circle, #25d366, #128c7e);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo2.png" alt="Logo"> 
+    </div>
+
+    <div class="nav-container">
+        <div class="nav-links">
+         <a href="home.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+             <a href="education.html">EDUCATION</a>
+            <a href="experience.html">EXPERIENCE</a>
+            <a href="interest.html">INTEREST</a>
+             <a href="e-resume.html">E-RESUME</a>
+            <a href="contact.html">CONTACT</a>
+         
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/mmallyssa/" class="instagram" target="_blank" title="Instagram">
+                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new.png" alt="Instagram" style="width: 30px;">
+            </a>
+            <a href="https://wa.me/601112521993" class="whatsapp" target="_blank" title="WhatsApp">
+                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp.png" alt="WhatsApp" style="width: 30px;">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

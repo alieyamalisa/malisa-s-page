@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My HTML Website</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #d4e7f7, #ffffff);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .nav-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-weight: 600;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            margin: 20px;
+            border: 5px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin: 15px 0;
+            color: #444;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #666;
+            font-weight: 400;
+        }
+        .intro {
+            font-size: 1em;
+            color: #555;
+            margin: 15px 0;
+            padding: 0 20px;
+            line-height: 1.6;
+            max-width: 700px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .cta-button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 1em;
+            color: white;
+            background: linear-gradient(to right, #ff6b6b, #f94d6a);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(to right, #f94d6a, #ff6b6b);
+            transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h3 {
+                font-size: 1em;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+
+            .intro {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo2.png" alt="Logo">
+    </div>
+    <img src="khun.jpg" class="profile-pic" alt="Profile Picture">
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+             <a href="education.html">EDUCATION</a>
+            <a href="experience.html">EXPERIENCE</a>
+            <a href="interest.html">INTEREST</a>
+             <a href="e-resume.html">E-RESUME</a>
+            <a href="contact.html">CONTACT</a>
+           
+        </div>
+    </div>
+    <h1>Welcome to Malisa's Page</h1>
+    <h3>Hello everyone, let’s get to know me...</h3>
+    <p class="intro">
+        Hi there! I’m Malisa. This website is all about exploring my journey, achievements, 
+        and aspirations. Let's connect and discover what drives me every day. ✨
+    </p>
+</body>
+</html>

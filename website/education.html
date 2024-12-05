@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My HTML Website</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #d4e7f7, #ffffff);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Section */
+        .nav-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: blue;
+            margin: 0 10px;
+            transition: color 0.3s;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover {
+            color: darkred;
+        }
+
+        /* Logo Section */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .logo img {
+            width: 130px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* Cards Section */
+        .card-group {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 120px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card .image-area {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card .image-area img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .info h1 {
+            font-size: 1.8em;
+            color: indianred;
+            text-align: center;
+        }
+
+        .info p {
+            font-size: 1.1em;
+            color: #555;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .picture-area {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .picture-area img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            background-color: indianred;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        li {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="logo2.png" alt="Logo">
+    </div>
+
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="home.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="experience.html">EXPERIENCE</a>
+            <a href="interest.html">INTEREST</a>
+             <a href="e-resume.html">E-RESUME</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <div class="image-area">
+                <img src="skabanggesa.jpeg" alt="SK ABANG GESA BELAWAI">
+            </div>
+            <div class="info">
+                <h1>SK ABANG GESA BELAWAI</h1>
+                <p>UPSR 1A 4B 1C</p>
+                <div class="picture-area">
+                    <img src="comel2.jpeg" alt="SK Abang Gesa Picture">
+                    <img src="sekolah.jpeg" alt="SK Abang Gesa Picture">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-area">
+                <img src="smkbelawai.jpeg" alt="SMK BELAWAI">
+            </div>
+            <div class="info">
+                <h1>SMK BELAWAI</h1>
+                <p>SPM - 3A 4B 1C</p>
+                <div class="picture-area">
+                    <img src="psv.jpeg" alt="SMK Belawai Picture">
+                    <img src="trio.jpeg" alt="SMK Belawai Picture">
+                    <img src="5b.jpeg" alt="SMK Belawai Picture">
+                    <img src="3A.jpeg" alt="SMK Belawai Picture">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-area">
+                <img src="uitm.jpg" alt="Universiti Teknologi MARA">
+            </div>
+            <div class="info">
+                <h1>UNIVERSITI TEKNOLOGI MARA</h1>
+                <p>Diploma in Information Management</p>
+                <div class="picture-area">
+                    <img src="gawairaya.JPG" alt="UiTM Picture">
+                    <img src="full.jpg" alt="UiTM Picture">
+                    <img src="deanc.jpg" alt="UiTM Picture">
+                    <img src="cute.JPG" alt="UiTM Picture">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
